@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="en"><head><!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerID.in - Buy & Sell Social Media IDs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }body {
+        background-color: #f4f4f8;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    header {
+        background-color: #1e1e2f;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .hero {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        margin-bottom: 25px;
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #2575fc;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .btn-secondary {
+        background-color: #6a11cb;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #222;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .trust-section ul {
+        list-style-type: disc;
+        padding-left: 40px;
+        color: #444;
+    }
+
+    footer {
+        background-color: #1e1e2f;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+</style>
+
+</head><body>
+    <header>
+        <div class="container">
+            <h1>SellerID.in</h1>
+            <nav>
+                <ul>
+                    <li><a href="#buy">Buy</a></li>
+                    <li><a href="#sell">Sell</a></li>
+                    <li><a href="#trust">Why Trust Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><section class="hero">
+    <div class="container">
+        <h2>Buy & Sell Instagram, Facebook, YouTube, and Gaming IDs</h2>
+        <p>Secure, Verified & Trusted Platform - Join Thousands of Satisfied Users</p>
+        <a href="#sell" class="btn">Sell Your ID</a>
+        <a href="#buy" class="btn btn-secondary">Browse Listings</a>
+    </div>
+</section>
+
+<section id="buy" class="buy-section">
+    <div class="container">
+        <h2>Buy Verified IDs</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Instagram ID</h3>
+                <p>Category: Fashion Influencer</p>
+                <p>Followers: 45K</p>
+                <p>Price: ₹12,000</p>
+                <a href="#contact" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <h3>YouTube Channel</h3>
+                <p>Category: Gaming</p>
+                <p>Subscribers: 20K</p>
+                <p>Price: ₹18,000</p>
+                <a href="#contact" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sell" class="sell-section">
+    <div class="container">
+        <h2>Sell Your Social Media ID</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="platform">Platform:</label>
+            <select id="platform" name="platform" required>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="youtube">YouTube</option>
+                <option value="gaming">Gaming ID</option>
+            </select>
+
+            <label for="username">Username/ID:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="followers">Followers/Subscribers:</label>
+            <input type="number" id="followers" name="followers" required>
+
+            <label for="price">Selling Price (₹):</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="contact">Contact Email:</label>
+            <input type="email" id="contact" name="contact" required>
+
+            <label for="details">Additional Details:</label>
+            <textarea id="details" name="details"></textarea>
+
+            <button type="submit" class="btn">Submit Listing</button>
+        </form>
+    </div>
+</section>
+
+<section id="trust" class="trust-section">
+    <div class="container">
+        <h2>Why Trust SellerID.in?</h2>
+        <ul>
+            <li>Verified Buyers and Sellers</li>
+            <li>Secure Escrow Service</li>
+            <li>Manual ID Review & Approval</li>
+            <li>Dedicated Customer Support</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="contact-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 SellerID.in - All rights reserved.</p>
+    </div>
+</footer>
+
+</body></html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerID.in - Buy & Sell Social Media IDs</title>
+    <link rel="stylesheet" href="styles.css">
+</head><body>
+    <header>
+        <div class="container">
+            <h1>SellerID.in</h1>
+            <nav>
+                <ul>
+                    <li><a href="#buy">Buy</a></li>
+                    <li><a href="#sell">Sell</a></li>
+                    <li><a href="#trust">Why Trust Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><section class="hero">
+    <div class="container">
+        <h2>Buy & Sell Instagram, Facebook, YouTube, and Gaming IDs</h2>
+        <p>Secure, Verified & Trusted Platform - Join Thousands of Satisfied Users</p>
+        <a href="#sell" class="btn">Sell Your ID</a>
+        <a href="#buy" class="btn btn-secondary">Browse Listings</a>
+    </div>
+</section>
+
+<section id="buy" class="buy-section">
+    <div class="container">
+        <h2>Buy Verified IDs</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Instagram ID</h3>
+                <p>Category: Fashion Influencer</p>
+                <p>Followers: 45K</p>
+                <p>Price: ₹12,000</p>
+                <a href="#contact" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <h3>YouTube Channel</h3>
+                <p>Category: Gaming</p>
+                <p>Subscribers: 20K</p>
+                <p>Price: ₹18,000</p>
+                <a href="#contact" class="btn">Buy Now</a>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+</section>
+
+<section id="sell" class="sell-section">
+    <div class="container">
+        <h2>Sell Your Social Media ID</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="platform">Platform:</label>
+            <select id="platform" name="platform" required>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="youtube">YouTube</option>
+                <option value="gaming">Gaming ID</option>
+            </select>
+
+            <label for="username">Username/ID:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="followers">Followers/Subscribers:</label>
+            <input type="number" id="followers" name="followers" required>
+
+            <label for="price">Selling Price (₹):</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="contact">Contact Email:</label>
+            <input type="email" id="contact" name="contact" required>
+
+            <label for="details">Additional Details:</label>
+            <textarea id="details" name="details"></textarea>
+
+            <button type="submit" class="btn">Submit Listing</button>
+        </form>
+    </div>
+</section>
+
+<section id="trust" class="trust-section">
+    <div class="container">
+        <h2>Why Trust SellerID.in?</h2>
+        <ul>
+            <li>Verified Buyers and Sellers</li>
+            <li>Secure Escrow Service</li>
+            <li>Manual ID Review & Approval</li>
+            <li>Dedicated Customer Support</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="contact-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 SellerID.in - All rights reserved.</p>
+    </div>
+</footer>
+
+</body></html><!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html><iframe src="https://docs.google.com/forms/d/e/your-form-id/viewform?embedded=true" 
+        width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+    Loading…
+</iframe>
